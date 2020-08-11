@@ -1,3 +1,10 @@
+properties([
+                parameters([
+                        string(name: 'String parameter', defaultValue: 'str'),
+                        boolean(name: 'Boolean parameter', defaultValue: 'true'),
+                ])
+        ])
+
 pipeline {
 
     agent any
